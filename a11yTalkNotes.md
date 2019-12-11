@@ -16,3 +16,5 @@ https://www.w3.org/WAI/
 - lighthouse
 - nvda
 
+link from Pete https://www.telerik.com/blogs/the-need-for-automated-accessibility-testing can integrate axe with jest...
+
