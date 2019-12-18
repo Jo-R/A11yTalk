@@ -5,6 +5,8 @@ Cover:
 - tools
 - some implementation examples
 
+might be good to go over this for structure https://www.w3.org/TR/WCAG21/ (summary https://24ways.org/2017/wcag-for-people-who-havent-read-them/)
+
 https://www.w3.org/TR/wai-aria-practices-1.1/
 
 https://www.w3.org/WAI/
@@ -18,7 +20,7 @@ some stuff from https://webaim.org/projects/million/
 
 we're building public facing stuff -> more important
 
-lawsuits...dominos...but even so its just nice to do it...we want people to use our sights (lol pun)
+lawsuits...dominos...no in UK unless or are a public body...but even so its just nice to do it...we want people to use our sights (lol pun)
 
 we do it a bit but not enough and what we do is inconsistent (and sometimes some a11y is not better than none - e.g role="button" but do nothing else to make it behave like a button)
 
