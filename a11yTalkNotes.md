@@ -1,16 +1,5 @@
 # a11y 
 
-Cover:
-- key areas
-- tools
-- some implementation examples
-
-might be good to go over this for structure https://www.w3.org/TR/WCAG21/ (summary https://24ways.org/2017/wcag-for-people-who-havent-read-them/)
-
-https://www.w3.org/TR/wai-aria-practices-1.1/
-
-https://www.w3.org/WAI/
-
 https://reactjs.org/docs/accessibility.html
 
 
@@ -22,7 +11,7 @@ we're building public facing stuff -> more important
 
 lawsuits...dominos...no in UK unless or are a public body...but even so its just nice to do it...we want people to use our sights (lol pun)
 
-we do it a bit but not enough and what we do is inconsistent (and sometimes some a11y is not better than none - e.g role="button" but do nothing else to make it behave like a button)
+we do it a bit but not enough and what we do is inconsistent 
 
 - it's invisible to us (obvious if css is broken, not obvious if a11y issues)
 - we don't bake a11y into our AC/user stories
@@ -32,20 +21,14 @@ so...
 - how we can we see the impacts
 - share some learning and incrementally improve how we do this
 
+## 4 principles
 
-## what - key areas, basic rules
+- Perceivable 
+- Operable
+- Understandable (content and operation)
+- Robust (can be interpreted by a wide variety of user agenst, incl assistive tech)
 
-Focus management is crucial
-Keyboard nav
-Semantic html
-Zoom
-Contrast
-Motion
-
-https://www.w3.org/TR/using-aria/
-
-https://www.w3.org/TR/wai-aria-practices-1.1/
-
+https://www.w3.org/TR/WCAG21/
 
 
 ## tools
@@ -65,7 +48,19 @@ link from Pete https://www.telerik.com/blogs/the-need-for-automated-accessibilit
 
 tools not a panacea - don't pick up everything
 
-## some examples
+## what - key areas, basic rules, with examples
+
+Focus management is crucial : if you do outline: 0 you really should add another :focus style, this is about the easiest win there is
+Keyboard nav
+Semantic html
+Zoom
+Contrast
+Motion
+
+https://www.w3.org/TR/using-aria/
+
+https://www.w3.org/TR/wai-aria-practices-1.1/
+
 
 
 ## so what can we take away and start doing?
