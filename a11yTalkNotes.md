@@ -43,6 +43,8 @@ we do it a bit but not enough and what we do is inconsistent
 - we don't bake a11y into our AC/user stories/culture
 - there's a lot to consider and learn - overwhelming - different groups, different needs, standards are lengthy and dull etc
 
+we're not alone - 61% of 1400 devs who answered a survey run by one of the devs on the Edge team do no accessibility testing https://www.gwhitworth.com/blog/2019/07/form-controls-components/
+
 so...
 - how we can we see the impacts
 - share some learning and incrementally improve how we, as a team, do this
@@ -88,9 +90,10 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility and review this
 
 - Zoom: responsive design can help with this, try zoom see what happens (200%)...meta tags...
 
-- Focus management for interactive elements is crucial : if you do outline: 0 you really should add another :focus style, this is about the easiest win there is...and if you have a div that wraps an input for formatting purposes (e.g. password input) use :focus-within...watch out for modals and things like focus getting trapped behind them, elements that are in collapsible divs - brief example of using refs to manage focus but use sparingly
+- Focus management for interactive elements is crucial: if you use the correct focusable elements the order just happens, tabIndex = 0 if not to insert them into the tab flow...if you do outline: 0 you really should add another :focus style, this is about the easiest win there is...and if you have a div that wraps an input for formatting purposes (e.g. password input) use :focus-within...watch out for modals and things like focus getting trapped behind them, elements that are in collapsible divs (show how hide these) - brief example of using refs to manage focus but use sparingly
 
-maybe use this as example for the next 2? https://24ways.org/2019/making-a-better-custom-select-element/ (is cloned and in this repo)
+use this as example for the next 2 https://24ways.org/2019/making-a-better-custom-select-element/ (is cloned and in this repo)
+this survey https://www.gwhitworth.com/blog/2019/07/form-controls-components/ shows the select element is a particular point of pain with 42% of web devs saying they've needed to recreate it themelevs due to the limitations of the inbuilt one
 
 - Keyboard nav: there are patterns and they are set out in https://www.w3.org/TR/wai-aria-practices-1.1/
 
