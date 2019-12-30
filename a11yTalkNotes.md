@@ -105,7 +105,7 @@ Look at downshift.js and reach UI stuff
 use this as example for the next 2 https://24ways.org/2019/making-a-better-custom-select-element/ (is cloned and in this repo)
 this survey https://www.gwhitworth.com/blog/2019/07/form-controls-components/ shows the select element is a particular point of pain with 42% of web devs saying they've needed to recreate it themelevs due to the limitations of the inbuilt one
 
-- Keyboard nav: there are patterns and they are set out in https://www.w3.org/TR/wai-aria-practices-1.1/
+- Keyboard nav: there are patterns and they are set out in https://www.w3.org/TR/wai-aria-practices-1.1/ - show how this example mapps to this
 
 - Semantic html...only if can't, use aria
   - https://www.w3.org/TR/using-aria/
@@ -114,7 +114,7 @@ this survey https://www.gwhitworth.com/blog/2019/07/form-controls-components/ sh
 
 The an nvda demo for this bit (captions in windows settings might work best):
 
-- structure/landmarks...https://www.w3.org/TR/wai-aria-practices/examples/landmarks/index.html
+- structure/landmarks...https://www.w3.org/TR/wai-aria-practices/examples/landmarks/index.html or https://webaim.org/techniques/semanticstructure/
   - in MySight we are more using h tags for visual differences - we aren't using them all and sometimes we skip them
   - information architecture - include how we approach alt text etc
   - maybe a good place to mention audiovisual/data vis stuff that needs special consideration in how you present that content so its accessible...eg captions, text explanantions (longdesc)
