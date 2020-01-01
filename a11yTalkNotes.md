@@ -79,7 +79,7 @@ console.log(document.activeElement)
 
 link from Pete https://www.telerik.com/blogs/the-need-for-automated-accessibility-testing can integrate axe with jest...
 
-tools not a panacea - don't pick up everything
+tools not a panacea - don't pick up everything - eg can automate some stuff but no current way of automating screen reader tests
 
 ## what - key areas, basic rules, with examples
 
@@ -87,6 +87,8 @@ https://reactjs.org/docs/accessibility.html - get some reacty stuff in
 https://developer.mozilla.org/en-US/docs/Web/Accessibility and review this
 
 Look at downshift.js and reach UI stuff
+
+this is good: https://www.24a11y.com/2019/what-a-year-of-learning-and-teaching-accessibility-taught-me/
 
 - Contrast: OK this is more design, and for some customers will be out of our controle to some extent :-) a11y for designers image https://webaim.org/resources/designers/ - obviously a lot of accessibility is rooted in the design of the page so we need to work hand in hand, even though I'm obviously gonna focus more on the dev side
 
@@ -130,12 +132,12 @@ Its within our gift to start...low hanging fruit
 
 - use the right html element for the job
 - keyboard nav, zoom...
-- start using some sort of tool as part of your development work
+- start using some sort of tool to flag potential issues as part of your development work
 - building a component? look at the authoring practices, bake in accessibillity to our base components
 - look for potential issues on code reviews
 
 Resources wiki page
 
-Some stuff is more structural - AC/Requirements/Checklists/more integrated tooling/what user groups do we prioritise?
+Some stuff is more structural - AC/Requirements/Checklists/more integrated tooling, unit or integration tests/what user groups do we prioritise?
 
-Ideally - user testing/expert audit
+Ideally - user testing/expert audit but manual testing is important (hard though if not an expert user of AT)
