@@ -106,6 +106,7 @@ this is good: https://www.24a11y.com/2019/what-a-year-of-learning-and-teaching-a
 
 use this as example for the next 2 https://24ways.org/2019/making-a-better-custom-select-element/ (is cloned and in this repo)
 this survey https://www.gwhitworth.com/blog/2019/07/form-controls-components/ shows the select element is a particular point of pain with 42% of web devs saying they've needed to recreate it themelevs due to the limitations of the inbuilt one
+...also can I add some semantics/landmarks and a save button to demo that and aria announcements as part of same example
 
 - Keyboard nav: there are patterns and they are set out in https://www.w3.org/TR/wai-aria-practices-1.1/ - show how this example mapps to this
 
