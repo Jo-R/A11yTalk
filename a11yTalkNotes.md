@@ -49,7 +49,7 @@ we're not alone - 61% of 1400 devs who answered a survey run by one of the devs 
 so...
 
 - how we can we see the impacts
-- share some learning and incrementally improve how we, as a team, do this
+- share some learning and incrementally improve how we can start to move in the right direction
 
 ## 4 principles
 
@@ -100,7 +100,7 @@ this is good: https://www.24a11y.com/2019/what-a-year-of-learning-and-teaching-a
 
   - ...watch out for modals and things like focus getting trapped behind them, elements that are in collapsible divs (show how hide these)
 
-  - On routing - make sure focus is cool and new stuff gets announced - skip link? since might want to skip back to place in the nav that thy came form (can use anchor/ids cf macy sutton example)
+  - On routing - make sure focus is cool and new stuff gets announced (spoiler: MySight is awful for this as far as my limited nvda skills can establish) - skip link? since might want to skip back to place in the nav that thy came form (can use anchor/ids cf macy sutton example)
 
   - brief example of using refs to manage focus but use sparingly
 
@@ -140,5 +140,4 @@ Its within our gift to start...low hanging fruit
 Resources wiki page
 
 Some stuff is more structural - AC/Requirements/Checklists/more integrated tooling, unit or integration tests/what user groups do we prioritise?
-
-Ideally - user testing/expert audit but manual testing is important (hard though if not an expert user of AT)
+Some stuff is just harder...e.g. time to learn screen reader and researching how to best implement this stuff...Ideally - user testing/expert audit but manual testing is important (hard though if not an expert user of AT)
