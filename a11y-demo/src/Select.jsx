@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 // a React version of https://24ways.org/2019/making-a-better-custom-select-element/
+
+// TODO SEE THIS ARTICLE AS WELL https://www.24a11y.com/2019/select-your-poison/
+
 export const Select = () => {
   const [optionsHidden, setOptionsHidden] = useState(true);
 
