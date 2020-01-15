@@ -29,16 +29,16 @@ const aOptions = Array.from(csOptions)
 // create and set start point for the state tracker
 let csState = "initial"
 // inform assistive tech (screen readers) of the names & roles of the elements in our group
-csSelector.setAttribute('role', 'combobox') 
-csSelector.setAttribute('aria-haspopup', 'listbox') 
-csSelector.setAttribute('aria-owns', 'custom-select-list') // container owns the list...
-csInput.setAttribute('aria-autocomplete', 'both') 
-csInput.setAttribute('aria-controls', 'custom-select-list') // ...but the input controls it
-csList.setAttribute('role', 'listbox') 
-csOptions.forEach(function(option) {
-	option.setAttribute('role', 'option') 
-	option.setAttribute('tabindex', "-1")  // make li elements keyboard focusable by script only
-})
+// csSelector.setAttribute('role', 'combobox') 
+// csSelector.setAttribute('aria-haspopup', 'listbox') 
+// csSelector.setAttribute('aria-owns', 'custom-select-list') // container owns the list...
+// csInput.setAttribute('aria-autocomplete', 'both') 
+// csInput.setAttribute('aria-controls', 'custom-select-list') // ...but the input controls it
+// csList.setAttribute('role', 'listbox') 
+// csOptions.forEach(function(option) {
+// 	option.setAttribute('role', 'option') 
+// 	option.setAttribute('tabindex', "-1")  // make li elements keyboard focusable by script only
+// })
 
 
 // EVENTS
