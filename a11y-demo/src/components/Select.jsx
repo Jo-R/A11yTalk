@@ -59,7 +59,7 @@ export const Select = ({options}) => {
                 <li
                   key={index}
                   role="option"
-                  tabIndex="-1"
+                  tabIndex={0}
                 >
                   {item}
                 </li>
