@@ -17,10 +17,10 @@ export const Select = ({options}) => {
   return (
     <WrapperDiv>
       <SampleDiv>
-        <label for="custom-select-input">User Type</label>
+        <label htmlFor="custom-select-input">User Type</label>
         <div
           id="custom-select-status"
-          class="hidden-visually"
+          className="hidden-visually"
           aria-live="polite"
         />
         <CustomSelect 
@@ -35,10 +35,10 @@ export const Select = ({options}) => {
             id="custom-select-input"
             aria-describedby="custom-select-info"
             aria-autocomplete="both"
-            aria-controls="custom-selct-list"
+            aria-controls="custom-select-list"
             onClick={toggleOptions}
           />
-          <span id="custom-select-info" class="hidden-visually">
+          <span id="custom-select-info" className="hidden-visually">
             Arrow down for options or start typing to filter.
           </span>
           <IconWrapper>
