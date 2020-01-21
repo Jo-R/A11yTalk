@@ -81,7 +81,8 @@ this survey https://www.gwhitworth.com/blog/2019/07/form-controls-components/ sh
 ## slide 11: semantic html and aria
 - Semantic html...only if can't, use aria
   - https://www.w3.org/TR/using-aria/
-  - https://www.w3.org/TR/wai-aria-practices-1.1/ : No aria better than bad aria - eg the broken promise of role="button"... webAIM million: sites with aria more likely to have accessibility issues!!
+  - https://www.w3.org/TR/wai-aria-practices-1.1/ : No aria better than bad aria - eg the broken promise of role="button"...e.g add a role to table will override the table smenatics with that role...
+  webAIM million: sites with aria more likely to have accessibility issues!!
   - can i include aria live regions/announcements for AT users? eg say its submitting
 
 The an nvda demo for this bit (captions in windows settings might work best):
