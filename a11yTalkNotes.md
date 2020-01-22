@@ -85,13 +85,15 @@ this survey https://www.gwhitworth.com/blog/2019/07/form-controls-components/ sh
   webAIM million: sites with aria more likely to have accessibility issues!!
   - can i include aria live regions/announcements for AT users? eg say its submitting
 
-The an nvda demo for this bit (captions in windows settings might work best):
+Mostly aria supports screen readers (along with speech recognition eg dragon) and getting that right is certainly not a low hanging fruit - realistically, the steep learning curve means need expert users to test and there's a moderate time investment involved in fully understanding aria...
 
 ## slide 12: structure and landmarks
 - structure/landmarks...https://www.w3.org/TR/wai-aria-practices/examples/landmarks/index.html or https://webaim.org/techniques/semanticstructure/
   - in MySight we are more using h tags for visual differences - we aren't using them all and sometimes we skip them
   - information architecture - include how we approach alt text etc
   - maybe a good place to mention audiovisual/data vis stuff that needs special consideration in how you present that content so its accessible...eg captions, text explanantions (longdesc)
+
+Page structure and good html are also important for seo...
 
 Finally...
 
