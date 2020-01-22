@@ -8,15 +8,60 @@ import { UpIcon } from "./UpIcon";
 // TODO SEE THIS ARTICLE AS WELL https://www.24a11y.com/2019/select-your-poison/
 
 export const Select = ({options}) => {
-  const [optionsHidden, setOptionsHidden] = useState(true);
+  const [showCustomDropdown, setShowCustomDropdown] = useState(true);
 
-  const toggleOptions = () => {
-    setOptionsHidden(!optionsHidden);
-  }
+  const handleKeyDown = (e) => {
+    const active = document.activeElement;
+    if (e.keyCode === 13) { // enter key
+      setShowCustomDropdown(false);
+    }
+    if (e.keyCode === 27) {// esc key
+      setShowCustomDropdown(false);
+    }
+    if (e.keyCode === 40) { // down arrow
+      const idx = parseInt(e.target.dataset.id, 10);
+      if (idx < options.length - 1 && active.nextSibling) {
+        e.preventDefault(); // prevent scrolling the drop down scrollbar
+        active.nextSibling.focus();
+      }
+    }
+    if (e.keyCode === 38) { // up arrow
+      const idx = parseInt(e.target.dataset.id, 10);
+      if (idx > 0 && active.previousSibling) {
+        e.preventDefault(); // prevent scrolling the drop down scrollbar
+        active.previousElementSibling.focus();
+      }
+    }
+  };
+
+  const handleInputChange = (e) => {
+    if (!e.target.value) { // TODO NEED CHANGIN TO NULL OR WHITESPACE CHECK
+      setShowCustomDropdown(false);
+      return;
+    }
+    if (!showCustomDropdown) {
+      setShowCustomDropdown(true);
+    }
+  };
+
+  const handleMouseSelect = (e) => {
+    setShowCustomDropdown(false);
+  };
+
+  const handleLoseFocus = () => {
+    setShowCustomDropdown(false);
+  };
+
+  const handleGetFocus = (e) => {
+    if (e.target.value !== "") {
+      setShowCustomDropdown(true);
+    }
+  };
+
 
   return (
     <WrapperDiv>
-      <SampleDiv>
+      <SampleDiv onMouseLeave={handleLoseFocus}>
         <label htmlFor="custom-select-input">User Type</label>
         <div
           id="custom-select-status"
@@ -36,28 +81,33 @@ export const Select = ({options}) => {
             aria-describedby="custom-select-info"
             aria-autocomplete="both"
             aria-controls="custom-select-list"
-            onClick={toggleOptions}
+            handleOnChange={handleInputChange}
+            onFocus={handleGetFocus}
           />
           <span id="custom-select-info" className="hidden-visually">
             Arrow down for options or start typing to filter.
           </span>
           <IconWrapper>
             {
-              optionsHidden && <DownIcon />
+              showCustomDropdown && <DownIcon />
             }
             {
-              !optionsHidden && <UpIcon />
+              !showCustomDropdown && <UpIcon />
             }
           </IconWrapper>
           <Options 
             id="custom-select-list" 
-            isHidden={optionsHidden}
+            isHidden={showCustomDropdown}
             role="listbox"
+            aria-expanded={showCustomDropdown}
+            onClick={handleMouseSelect}
+            onKeyDown={handleKeyDown}
           >
             {
               options && options.map((item, index) => 
                 <li
                   key={index}
+                  data-id={index}
                   role="option"
                   tabIndex={0}
                 >
