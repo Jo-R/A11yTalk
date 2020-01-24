@@ -95,6 +95,8 @@ Mostly aria supports screen readers (along with speech recognition eg dragon) an
 
 Page structure and good html are also important for seo...
 
+WATCH THIS https://www.smashingmagazine.com/2019/02/accessibility-webinar/
+
 Finally...
 
 ## slide 13: motion
