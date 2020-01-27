@@ -67,7 +67,7 @@ this is good: https://www.24a11y.com/2019/what-a-year-of-learning-and-teaching-a
 
   - ...watch out for modals and things like focus getting trapped behind them, elements that are in collapsible divs (show how hide these)
 
-  - On routing - make sure focus is cool and new stuff gets announced (spoiler: MySight is awful for this as far as my limited nvda skills can establish) - skip link? since might want to skip back to place in the nav that thy came form (can use anchor/ids cf macy sutton example)
+  - On routing - make sure focus is cool and new stuff gets announced (spoiler: MySight is awful for this as far as my limited nvda skills can establish) - skip link? since might want to skip back to place in the nav that thy came form (can use anchor/ids cf macy sutton example) https://www.gatsbyjs.org/blog/2019-07-11-user-testing-accessible-client-routing/ 
 
   - brief example of using refs to manage focus but use sparingly
 
