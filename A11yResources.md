@@ -28,7 +28,9 @@ this has an interesting section on 'design does not always dictate implementatio
 
 one of the most common elements that web devs end up re-implementing is select, so here's one take on how best to do that: https://24ways.org/2019/making-a-better-custom-select-element/
 
-good llok at what its like to navigate the web using a screen reader: https://www.smashingmagazine.com/2019/02/accessibility-webinar/
+how the financial times made their website more accessible (includes some of their testing): https://www.youtube.com/watch?v=_wQevZxH7Gs
 
-a look at prefers- reduced-motion: https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/ which links this article on web animation and motion sensitivity https://alistapart.com/article/designing-safer-web-animation-for-motion-sensitivity/
+good look at what its like to navigate the web using a screen reader: https://www.smashingmagazine.com/2019/02/accessibility-webinar/
+
+a look at prefers-reduced-motion: https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/ which links this article on web animation and motion sensitivity https://alistapart.com/article/designing-safer-web-animation-for-motion-sensitivity/
 
